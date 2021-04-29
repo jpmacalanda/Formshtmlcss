@@ -1,0 +1,366 @@
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>VIRAL HEPATITIS CARE FORM</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Consultdate">Consult date</label>  
+  <div class="col-md-4">
+  <input id="Consultdate" name="Consultdate" type="text" placeholder="(mm/dd/yyyy)" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Clientvisittype">Client visit type</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Clientvisittype-0">
+      <input type="radio" name="Clientvisittype" id="Clientvisittype-0" value="1" checked="checked">
+      Initial
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Clientvisittype-1">
+      <input type="radio" name="Clientvisittype" id="Clientvisittype-1" value="2">
+      Follow-up
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Patientcode">Patient code</label>  
+  <div class="col-md-4">
+  <input id="Patientcode" name="Patientcode" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="UniqueIdentifierCode">Unique Identifier Code</label>  
+  <div class="col-md-4">
+  <input id="UniqueIdentifierCode" name="UniqueIdentifierCode" type="text" placeholder="XX-XX-XX-XXXXXXXX" class="form-control input-md" required="">
+  <span class="help-block">Note: Creating UIC - First two letters of mother's name + First two letters of father's name + Birth order + Date of birth (mm-dd-yyyy)</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Facilityname">Facility name</label>  
+  <div class="col-md-4">
+  <input id="Facilityname" name="Facilityname" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Testedpositivefor">Tested positive for</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="Testedpositivefor-0">
+      <input type="checkbox" name="Testedpositivefor" id="Testedpositivefor-0" value="1">
+      Hepatitis B
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Testedpositivefor-1">
+      <input type="checkbox" name="Testedpositivefor" id="Testedpositivefor-1" value="2">
+      Hepatitis C
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Sexassignedatbirth">Sex assigned at birth</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Sexassignedatbirth-0">
+      <input type="radio" name="Sexassignedatbirth" id="Sexassignedatbirth-0" value="1" checked="checked">
+      Male
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Sexassignedatbirth-1">
+      <input type="radio" name="Sexassignedatbirth" id="Sexassignedatbirth-1" value="2">
+      Female
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="PatientName">Name (full name):</label>  
+  <div class="col-md-4">
+  <input id="PatientName" name="PatientName" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="pregfem">If female, is she pregnant? </label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="pregfem-0">
+      <input type="radio" name="pregfem" id="pregfem-0" value="1" checked="checked">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pregfem-1">
+      <input type="radio" name="pregfem" id="pregfem-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ageinyears">Age in years</label>  
+  <div class="col-md-1">
+  <input id="ageinyears" name="ageinyears" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="weight">Weight(in kg)</label>  
+  <div class="col-md-1">
+  <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Height">Height (in cm)</label>  
+  <div class="col-md-1">
+  <input id="Height" name="Height" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Signsandsymptoms ">Signs and symptoms</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="Signsandsymptoms -0">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -0" value="Jaundice">
+      Jaundice
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -1">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -1" value="Coagulopathy">
+      Coagulopathy
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -2">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -2" value="Ascites">
+      Ascites
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -3">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -3" value="Variceal Hemorrhage">
+      Variceal Hemorrhage
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -4">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -4" value="Hepatic Encephalopathy">
+      Hepatic Encephalopathy
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -5">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -5" value="Hepatomegaly">
+      Hepatomegaly
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -6">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -6" value="Splenomegaly">
+      Splenomegaly
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -7">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -7" value="Pruritus">
+      Pruritus
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -8">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -8" value="Fatigue">
+      Fatigue
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -9">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -9" value="Spider Angiomata">
+      Spider Angiomata
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Signsandsymptoms -10">
+      <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -10" value="Palmar Erythema">
+      Palmar Erythema
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="OtherSS">Other Signs or Symptoms</label>  
+  <div class="col-md-4">
+  <input id="OtherSS" name="OtherSS" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Form Name</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="HBsAg">HBsAg</label>  
+  <div class="col-md-4">
+  <input id="HBsAg" name="HBsAg" type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="HBeAg">HBeAg</label>  
+  <div class="col-md-4">
+  <input id="HBeAg" name="HBeAg" type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Anti-HCV">Anti-HCV</label>  
+  <div class="col-md-4">
+  <input id="Anti-HCV" name="Anti-HCV" type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="HCV-RNA (quali)">HCV-RNA (quali)</label>  
+  <div class="col-md-4">
+  <input id="HCV-RNA (quali)" name="HCV-RNA (quali)" type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="HCV-RNA (quali)">HCV-RNA (quali)</label>  
+  <div class="col-md-4">
+  <input id="HCV-RNA (quali)" name="HCV-RNA (quali)" type="text" placeholder="placeholder" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="HCV-RNA (quanti) ">HCV-RNA (quanti) </label>  
+  <div class="col-md-4">
+  <input id="HCV-RNA (quanti) " name="HCV-RNA (quanti) " type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="HBV DNA">HBV DNA</label>  
+  <div class="col-md-4">
+  <input id="HBV DNA" name="HBV DNA" type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="AST (SGOT) ">AST (SGOT) </label>  
+  <div class="col-md-4">
+  <input id="AST (SGOT) " name="AST (SGOT) " type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ALT (SGPT)">ALT (SGPT)</label>  
+  <div class="col-md-4">
+  <input id="ALT (SGPT)" name="ALT (SGPT)" type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Total Bilirubin ">Total Bilirubin </label>  
+  <div class="col-md-4">
+  <input id="Total Bilirubin " name="Total Bilirubin " type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Albumin">Albumin</label>  
+  <div class="col-md-4">
+  <input id="Albumin" name="Albumin" type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Platelet Count">Platelet Count</label>  
+  <div class="col-md-4">
+  <input id="Platelet Count" name="Platelet Count" type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="PT INR">PT INR</label>  
+  <div class="col-md-4">
+  <input id="PT INR" name="PT INR" type="text" placeholder="mm/dd/yy" class="form-control input-md">
+    
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+</fieldset>
+</form>
