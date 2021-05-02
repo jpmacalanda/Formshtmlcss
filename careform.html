@@ -1,18 +1,18 @@
 <form class="form-horizontal">
 <fieldset>
 
-<!-- Form Name -->
-<legend>VIRAL HEPATITIS CARE FORM</legend>
 
-<!-- Text input-->
+<legend>VIRAL HEPATITIS CARE FORM</legend>
+<fieldset>
 <div class="form-group">
   <label class="col-md-4 control-label" for="Consultdate">Consult date</label>  
   <div class="col-md-4">
   <input id="Consultdate" name="Consultdate" type="text" placeholder="(mm/dd/yyyy)" class="form-control input-md" required="">
     
-  </div>
+</div>
 </div>
 
+<legend>Visit Information</legend>
 <!-- Multiple Radios -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="Clientvisittype">Client visit type</label>
@@ -77,6 +77,18 @@
 	</div>
   </div>
 </div>
+</fieldset>
+<fieldset>
+<legend>Client Data</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="PatientName">Name (full name):</label>  
+  <div class="col-md-4">
+  <input id="PatientName" name="PatientName" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
 
 <!-- Multiple Radios -->
 <div class="form-group">
@@ -97,14 +109,6 @@
   </div>
 </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="PatientName">Name (full name):</label>  
-  <div class="col-md-4">
-  <input id="PatientName" name="PatientName" type="text" placeholder="" class="form-control input-md" required="">
-    
-  </div>
-</div>
 
 <!-- Multiple Radios -->
 <div class="form-group">
@@ -151,10 +155,16 @@
     
   </div>
 </div>
+<form class="form-horizontal">
+
+</fieldset>
+<fieldset>
+<legend>Clinical Assesment</legend>
+
 
 <!-- Multiple Checkboxes -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Signsandsymptoms ">Signs and symptoms</label>
+  <label class="col-md-4 control-label" for="Signsandsymptoms "><strong>Signs and symptoms</strong><br></br></label>
   <div class="col-md-4">
   <div class="checkbox">
     <label for="Signsandsymptoms -0">
@@ -211,156 +221,509 @@
     </label>
 	</div>
   <div class="checkbox">
-    <label for="Signsandsymptoms -9">
+<label for="Signsandsymptoms -9">
       <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -9" value="Spider Angiomata">
       Spider Angiomata
-    </label>
+</label>
 	</div>
-  <div class="checkbox">
+<div class="checkbox">
     <label for="Signsandsymptoms -10">
       <input type="checkbox" name="Signsandsymptoms " id="Signsandsymptoms -10" value="Palmar Erythema">
       Palmar Erythema
-    </label>
-	</div>
-  </div>
+</label>
 </div>
-
+</div>
+</div>
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="OtherSS">Other Signs or Symptoms</label>  
   <div class="col-md-4">
-  <input id="OtherSS" name="OtherSS" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
+  <input id="OtherSS" name="OtherSS" type="text" placeholder="" class="form-control input-md"> 
 </div>
+</div>
+<br></br>
+<label><strong>Laboratory tests</strong></label>
+<br></br>
 
-<form class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
-<legend>Form Name</legend>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="HBsAg">HBsAg</label>  
+  <label class="col-md-4 control-label" for="HBsAGdate">HBsAG</label>  
   <div class="col-md-4">
-  <input id="HBsAg" name="HBsAg" type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  Date <input id="HBsAGdate" name="HBsAGdate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
+  </div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="HBsAGres">Result</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="HBsAGres-0">
+      <input type="radio" name="HBsAGres" id="HBsAGres-0" value="1" checked="checked">
+      Positive
+    </label>
+	</div>
+  <div class="radio">
+    <label for="HBsAGres-1">
+      <input type="radio" name="HBsAGres" id="HBsAGres-1" value="2">
+      Negative
+    </label>
+	</div>
   </div>
 </div>
 
+<br>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="HBeAg">HBeAg</label>  
+  <label class="col-md-4 control-label" for="HBeAgdate">HBeAg</label>  
   <div class="col-md-4">
-  <input id="HBeAg" name="HBeAg" type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  Date <input id=" HBeAgdate" name=" HBeAgdate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
+  </div>
+<!-- Multiple Radios -->
+<div class="form-group">
+<label class="col-md-4 control-label" for="HBeAgres">Result</label>
+<div class="col-md-4">
+<div class="radio">
+<label for="HBsAGres-0">
+<input type="radio" name=" HBeAgres" id="HBeAgres-0" value="1" checked="checked">
+Positive
+</label>
+</div>
+<div class="radio">
+<label for="HBsAGres-1">
+      <input type="radio" name=" HBeAgres" id="HBeAgres-1" value="2">
+      Negative
+    </label>
+	</div>
   </div>
 </div>
 
+
+
+
+<br>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Anti-HCV">Anti-HCV</label>  
+  <label class="col-md-4 control-label" for="Anti-HCVdate">Anti-HCV</label>  
   <div class="col-md-4">
-  <input id="Anti-HCV" name="Anti-HCV" type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  Date <input id=" Anti-HCVdate" name=" Anti-HCVdate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
+  </div>
+<!-- Multiple Radios -->
+<div class="form-group">
+<label class="col-md-4 control-label" for="Anti-HCVres">Result</label>
+<div class="col-md-4">
+<div class="radio">
+<label for="HBsAGres-0">
+Date <input type="radio" name=" Anti-HCVres" id="Anti-HCVres-0" value="1" checked="checked">
+Reactive
+</label>
+</div>
+<div class="radio">
+<label for="HBsAGres-1">
+      <input type="radio" name=" Anti-HCVres" id="Anti-HCVres-1" value="2">
+      Non-reactive
+    </label>
+	</div>
   </div>
 </div>
 
+
+<br>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="HCV-RNA (quali)">HCV-RNA (quali)</label>  
+  <label class="col-md-4 control-label" for="HCV-RNA (quali)date">HCV-RNA (quali)</label>  
   <div class="col-md-4">
-  <input id="HCV-RNA (quali)" name="HCV-RNA (quali)" type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  Date <input id=" HCV-RNA (quali)date" name=" HCV-RNA (quali)date" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
+  </div>
+<!-- Multiple Radios -->
+<div class="form-group">
+<label class="col-md-4 control-label" for="HCV-RNA (quali)res">Result</label>
+<div class="col-md-4">
+<div class="radio">
+<label for="HBsAGres-0">
+<input type="radio" name=" HCV-RNA (quali)res" id=" HCV-RNA (quali)res-0" value="1" checked="checked">
+Positive
+</label>
+</div>
+<div class="radio">
+<label for="HBsAGres-1">
+      <input type="radio" name=" HCV-RNA (quali)res" id=" HCV-RNA (quali)res-1" value="2">
+      Negative
+    </label>
+	</div>
   </div>
 </div>
 
+<br>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="HCV-RNA (quali)">HCV-RNA (quali)</label>  
+  <label class="col-md-4 control-label" for="HCV-RNA (quanti)date">HCV-RNA (quanti)</label>  
   <div class="col-md-4">
-  <input id="HCV-RNA (quali)" name="HCV-RNA (quali)" type="text" placeholder="placeholder" class="form-control input-md">
-    
+ Date  <input id=" HCV-RNA (quanti)date" name=" HCV-RNA (quanti)date" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
   </div>
-</div>
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="HCV-RNA (quanti) ">HCV-RNA (quanti) </label>  
+  <label class="col-md-4 control-label" for="HCV-RNA (quanti)res">Result</label>  
   <div class="col-md-4">
-  <input id="HCV-RNA (quanti) " name="HCV-RNA (quanti) " type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  <input id="HCV-RNA (quanti)res" name="HCV-RNA (quanti)res" type="text" placeholder="IU/mL" class="form-control input-md">IU/mL
+ </div>
+</div> 
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="HBV DNAdate">HBV DNA</label>  
+  <div class="col-md-4">
+ Date  <input id=" HBV DNAdate" name=" HBV DNAdate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
   </div>
-</div>
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="HBV DNA">HBV DNA</label>  
+  <label class="col-md-4 control-label" for="HBV DNAres">Result</label>  
   <div class="col-md-4">
-  <input id="HBV DNA" name="HBV DNA" type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  <input id="HBV DNAres" name="HBV DNAres" type="text" placeholder="IU/mL" class="form-control input-md">IU/mL
+ </div>
+</div> 
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="AST SGOTdate">AST SGOT</label>  
+  <div class="col-md-4">
+ Date  <input id=" AST SGOTdate" name=" AST SGOTdate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
   </div>
-</div>
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="AST (SGOT) ">AST (SGOT) </label>  
+  <label class="col-md-4 control-label" for="AST SGOTres">Result</label>  
   <div class="col-md-4">
-  <input id="AST (SGOT) " name="AST (SGOT) " type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  <input id="AST SGOTres" name="AST SGOTres" type="text" placeholder="IU/L" class="form-control input-md">IU/L
+ </div>
+</div> 
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ALT SGPTdate">ALT SGPT</label>  
+  <div class="col-md-4">
+ Date  <input id=" ALT SGPTdate" name=" ALT SGPTdate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
   </div>
-</div>
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="ALT (SGPT)">ALT (SGPT)</label>  
+  <label class="col-md-4 control-label" for="ALT SGPTres">Result</label>  
   <div class="col-md-4">
-  <input id="ALT (SGPT)" name="ALT (SGPT)" type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  <input id="ALT SGPTres" name="ALT SGPTres" type="text" placeholder="IU/L" class="form-control input-md">IU/L
+ </div>
+</div> 
+
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Total Bilirubindate">Total Bilirubin</label>  
+  <div class="col-md-4">
+ Date  <input id=" Total Bilirubindate" name=" Total Bilirubindate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
   </div>
-</div>
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Total Bilirubin ">Total Bilirubin </label>  
+  <label class="col-md-4 control-label" for="Total Bilirubinres">Result</label>  
   <div class="col-md-4">
-  <input id="Total Bilirubin " name="Total Bilirubin " type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  <input id="Total Bilirubinres" name="Total Bilirubinres" type="text" placeholder="mg/dL" class="form-control input-md">mg/dL
+ </div>
+</div> 
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Albumindate">Albumin</label>  
+  <div class="col-md-4">
+ Date  <input id=" Albumindate" name=" Albumindate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
   </div>
-</div>
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Albumin">Albumin</label>  
+  <label class="col-md-4 control-label" for="Albuminres">Result</label>  
   <div class="col-md-4">
-  <input id="Albumin" name="Albumin" type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  <input id="Albuminres" name="Albuminres" type="text" placeholder="g/dL" class="form-control input-md">g/dL
+ </div>
+</div> 
+
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Platelet Countdate">Platelet Count</label>  
+  <div class="col-md-4">
+ Date  <input id=" Platelet Countdate" name=" Platelet Countdate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
   </div>
-</div>
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="Platelet Count">Platelet Count</label>  
+  <label class="col-md-4 control-label" for="Platelet Countres">Result</label>  
   <div class="col-md-4">
-  <input id="Platelet Count" name="Platelet Count" type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  <input id="Platelet Countres" name="Platelet Countres" type="text" placeholder="" class="form-control input-md">10<sup>3</sup>/L
+ </div>
+</div> 
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="PT INRdate">PT INR</label>  
+  <div class="col-md-4">
+ Date  <input id=" PT INRdate" name=" PT INRdate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
   </div>
-</div>
+
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="PT INR">PT INR</label>  
+  <label class="col-md-4 control-label" for="PT INRres">Result</label>  
   <div class="col-md-4">
-  <input id="PT INR" name="PT INR" type="text" placeholder="mm/dd/yy" class="form-control input-md">
-    
+  <input id="PT INRres" name="PT INRres" type="text" placeholder="sec" class="form-control input-md">sec
+ </div>
+</div> 
+
+<br></br>
+<label><strong>Non-invasive tests for detection of cirrhosis (use the most recent lab results)</strong></label>
+<br></br>
+
+
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Aminotransferase/Platelet Ratio Index Scoredate">Aminotransferase/Platelet Ratio Index Score</label>  
+  <div class="col-md-4">
+ Date  <input id=" Aminotransferase/Platelet Ratio Index Scoredate" name=" Aminotransferase/Platelet Ratio Index Scoredate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
+  </div>
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Aminotransferase/Platelet Ratio Index Scoreres">Result</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Aminotransferase/Platelet Ratio Index Scoreres-0">
+      <input type="radio" name="Aminotransferase/Platelet Ratio Index Scoreres" id="Aminotransferase/Platelet Ratio Index Scoreres-0" value="1" checked="checked">
+      ≤2
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Aminotransferase/Platelet Ratio Index Scoreres-1">
+      <input type="radio" name="Aminotransferase/Platelet Ratio Index Scoreres" id="Aminotransferase/Platelet Ratio Index Scoreres-1" value="2">
+      >2
+    </label>
+	</div>
   </div>
 </div>
+
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Fibrosis 4 / FIB-4 Scoredate">Fibrosis 4 / FIB-4 Score</label>  
+  <div class="col-md-4">
+ Date  <input id=" Fibrosis 4 / FIB-4 Scoredate" name=" Fibrosis 4 / FIB-4 Scoredate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
+  </div>
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Fibrosis 4 / FIB-4 Scoreres">Result</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Fibrosis 4 / FIB-4 Scoreres-0">
+      <input type="radio" name="Fibrosis 4 / FIB-4 Scoreres" id="Fibrosis 4 / FIB-4 Scoreres-0" value="1" checked="checked">
+      ≤3.25
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Fibrosis 4 / FIB-4 Scoreres-1">
+      <input type="radio" name="Fibrosis 4 / FIB-4 Scoreres" id="Fibrosis 4 / FIB-4 Scoreres-1" value="2">
+      >3.25
+    </label>
+	</div>
+  </div>
+</div>
+
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Transient Elastographydate">Transient Elastography</label>  
+  <div class="col-md-4">
+ Date  <input id=" Transient Elastographydate" name=" Transient Elastographydate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
+  </div>
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Transient Elastographyres">Result</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Transient Elastographyres-0">
+      <input type="radio" name="Transient Elastographyres" id="Transient Elastographyres-0" value="1" checked="checked">
+      <12.5 kPa
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Transient Elastographyres-1">
+      <input type="radio" name="Transient Elastographyres" id="Transient Elastographyres-1" value="2">
+      ≥12.5 kPa
+    </label>
+	</div>
+  </div>
+</div>
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Imaging (UTZ/CT/MRI) date">Imaging (UTZ/CT/MRI) </label>  
+  <div class="col-md-4">
+ Date  <input id=" Imaging (UTZ/CT/MRI) date" name=" Imaging (UTZ/CT/MRI) date" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
+  </div>
+
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Imagingres1"></label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Imagingres1-0">
+      <input type="radio" name="Imagingres1" id="Imagingres1-0" value="1" checked="checked">
+      Cirrhosis
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Imagingres1-1">
+      <input type="radio" name="Imagingres1" id="Imagingres1-1" value="2">
+      No cirrhosis
+    </label>
+	</div>
+  </div>
+</div>
+<br>
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Imagingres2"></label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Imagingres2-0">
+      <input type="radio" name="Imagingres2" id="Imagingres2-0" value="1" checked="checked">
+      Mass
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Imagingres2-1">
+      <input type="radio" name="Imagingres2" id="Imagingres2-1" value="2">
+      No Mass
+    </label>
+	</div>
+  </div>
+</div
+
+
+
+<br>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Child-Turcotte-Pugh Class Scoredate">Child-Turcotte-Pugh Class Score</label>  
+  <div class="col-md-4">
+ Date  <input id=" Child-Turcotte-Pugh Class Scoredate" name=" Child-Turcotte-Pugh Class Scoredate" type="text" placeholder="(mm/dd/yy)" class="form-control input-md">
+  </div>
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Child-Turcotte-Pugh Class Scoreres">Result</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Child-Turcotte-Pugh Class Scoreres-0">
+      <input type="radio" name="Child-Turcotte-Pugh Class Scoreres" id="Child-Turcotte-Pugh Class Scoreres-0" value="1" checked="checked">
+      Class A
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Child-Turcotte-Pugh Class Scoreres-1">
+      <input type="radio" name="Child-Turcotte-Pugh Class Scoreres" id="Child-Turcotte-Pugh Class Scoreres-1" value="2">
+      Class B
+    </label>
+	</div>
+<div class="radio">
+    <label for="Child-Turcotte-Pugh Class Scoreres-2">
+      <input type="radio" name="Child-Turcotte-Pugh Class Scoreres" id="Child-Turcotte-Pugh Class Scoreres-2" value="3">
+      Class C
+    </label>
+	</div>
+  </div>
+</div>
+
+
+
+
+
+<br>
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Did the client develop liver cirrhosis following treatment?res">Did the client develop liver cirrhosis following treatment?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Did the client develop liver cirrhosis following treatment?res-0">
+      <input type="radio" name="Did the client develop liver cirrhosis following treatment?res" id="Did the client develop liver cirrhosis following treatment?res-0" value="1" checked="checked">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Did the client develop liver cirrhosis following treatment?res-1">
+      <input type="radio" name="Did the client develop liver cirrhosis following treatment?res" id="Did the client develop liver cirrhosis following treatment?res-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+
+
+
+<br>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Did the client develop hepatocellular carcinoma following treatment?res">Did the client develop hepatocellular carcinoma following treatment?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="Did the client develop hepatocellular carcinoma following treatment?res-0">
+      <input type="radio" name="Did the client develop hepatocellular carcinoma following treatment?res" id="Did the client develop hepatocellular carcinoma following treatment?res-0" value="1" checked="checked">
+      Yes
+    </label>
+	</div>
+  <div class="radio">
+    <label for="Did the client develop hepatocellular carcinoma following treatment?res-1">
+      <input type="radio" name="Did the client develop hepatocellular carcinoma following treatment?res" id="Did the client develop hepatocellular carcinoma following treatment?res-1" value="2">
+      No
+    </label>
+	</div>
+  </div>
+</div>
+
+
+
+
+
+
 
 </fieldset>
-</form>
-
-
-
 </fieldset>
 </form>
