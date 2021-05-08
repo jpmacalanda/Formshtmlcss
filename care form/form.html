@@ -62,7 +62,7 @@
 
 		</span> 
 		</li>		<li id="li_2" >
-		<label class="description" for="element_2">Facilitiy Name </label>
+		<label class="description" for="element_2">Facility Name </label>
 		<div>
 			<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
 		</div> 
@@ -71,15 +71,30 @@
 		<div>
 			<input id="element_6" name="element_6" class="element text medium" type="text" maxlength="255" value=""/> 
 		</div> 
-		</li>		<li id="li_5" >
-		<label class="description" for="element_5">Unique Identifier Code </label>
+		</li>		<li id="li_14" >
+		<label class="description" for="element_14">Unique Identifier Code [UIC] </label>
 		<div>
-			<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
-		</div> 
-		</li>		<li class="section_break">
-			<h3></h3>
-			<p>Note: Creating UIC - First two letters of mother's name + First two letters of father's name + Birth order + Date of birth (mm-dd-yyyy)</p>
-		</li>		<li id="li_15" >
+			
+
+		<span>
+			<center><input id="element_14_1" name="element_14_1" class="element text" maxlength="255" size="2" value=""/></center>
+			<label><center>First two letters<br>of mother's name</center></label>
+		</span>
+		<span>
+			<center><input id="element_14_2" name="element_14_2" class="element text" maxlength="255" size="2" value=""/></center>
+			<label class="tam"><center>First two letters <br>of father's name</center></label>
+		</span>
+		<span>
+			<center><input id="element_14_3" name="element_14_3" class="element text" maxlength="255" size="2" value=""/></center>
+			<label class="tam"><center>Birth<br>order</center></label>
+		</span>
+		<span>
+			<center><input id="element_14_4" name="element_14_4" class="element text" maxlength="255" size="7" value=""/></center>
+			<label><center>Birth date<br>(mm-dd-yyyy)</center></label>
+		</span> 
+		</li>	
+			
+			<li id="li_15">
 		<label class="description" for="element_15">Tested positive for </label>
 		<span>
 			<input id="element_15_1" name="element_15_1" class="element checkbox" type="checkbox" value="1" />
@@ -91,12 +106,34 @@
 		</li>		<li class="section_break">
 			<h3>CLIENT DATA</h3>
 			<p></p>
-		</li>		<li id="li_8" >
-		<label class="description" for="element_8">Name (full name) </label>
-		<div>
-			<input id="element_8" name="element_8" class="element text medium" type="text" maxlength="255" value=""/> 
-		</div><p class="guidelines" id="guide_8"><small>First Name, Middle Name, Last Name Suffix</small></p> 
-		</li>		<li id="li_16" >
+		</li>		
+
+
+		<li id="li_8" >
+		<label class="description" for="element_8">Name </label>
+
+		<span>
+			<input id="element_8_1" name="element_8_1" class="element text" maxlength="255" size="14" value=""/>
+			<label>First</label>
+		</span>
+		<span>
+			<input id="element_8_2" name="element_8_2" class="element text" maxlength="255" size="14" value=""/>
+			<label class="tam">Middle</label>
+		</span>
+		<span>
+			<input id="element_8_3" name="element_8_3" class="element text" maxlength="255" size="14" value=""/>
+			<label class="tam">Last</label>
+		</span>
+		<span>
+			<input id="element_8_4" name="element_8_4" class="element text" maxlength="255" size="3" value=""/>
+			<label>Suffix</label>
+		</span> 
+		</li>
+
+
+
+
+<li id="li_16" >
 		<label class="description" for="element_16">Sex assigned at birth </label>
 		<span>
 			<input id="element_16_1" name="element_16" class="element radio" type="radio" value="1" />
@@ -243,8 +280,8 @@
 		</div> 
 		</li>		<li class="section_break">
 			<h3></h3>
-			<p>Lanratory Tests</p>
-		</li>		<li id="li_31" >
+			<p>Laboratory Tests</p>
+		</li>	<li id="li_31" >
 		<label class="description" for="element_31">HBsAG test date </label>
 		<span>
 			<input id="element_31_1" name="element_31_1" class="element text" size="2" maxlength="2" value="" type="text"> /
@@ -273,13 +310,13 @@
 			});
 		</script>
 		 
-		</li>		<li id="li_44" >
+		</li>	<li id="li_44" >
 		<label class="description" for="element_44">HBsAG test result </label>
 		<span>
 			<input id="element_44_1" name="element_44" class="element radio" type="radio" value="1" />
-<label class="choice" for="element_44_1">Positive</label>
-<input id="element_44_2" name="element_44" class="element radio" type="radio" value="2" />
-<label class="choice" for="element_44_2">Negative</label>
+			<label class="choice" for="element_44_1">Positive</label>
+			<input id="element_44_2" name="element_44" class="element radio" type="radio" value="2" />
+			<label class="choice" for="element_44_2">Negative</label>
 
 		</span> 
 		</li>		<li id="li_32" >
@@ -294,7 +331,7 @@
 		</span>
 		<span>
 	 		<input id="element_32_3" name="element_32_3" class="element text" size="4" maxlength="4" value="" type="text">
-			<label for="element_32_3">YYYY</label>
+			<label for="element_32_3">YYYY
 		</span>
 	
 		<span id="calendar_32">
@@ -889,14 +926,15 @@
 		<label class="description" for="element_81">Did the client acquire/develop any of the following compared from the last visit:
  </label>
 		<span>
-			<input id="element_81_1" name="element_81" class="element radio" type="radio" value="1" />
-<label class="choice" for="element_81_1">Hepatitis B co-infection (if the client was initially diagnosed with Hepatitis C infection)</label>
-<input id="element_81_2" name="element_81" class="element radio" type="radio" value="2" />
-<label class="choice" for="element_81_2">Hepatitis B co-infection (if the client was initially diagnosed with Hepatitis C infection)</label>
-<input id="element_81_3" name="element_81" class="element radio" type="radio" value="3" />
-<label class="choice" for="element_81_3">HIV co-infection</label>
-<input id="element_81_4" name="element_81" class="element radio" type="radio" value="4" />
-<label class="choice" for="element_81_4">Other</label>
+			<input id="element_81_1" name="element_81_1" class="element checkbox" type="checkbox" value="1" />
+			<label class="choice" for="element_81_1">Hepatitis B co-infection (if the client was initially diagnosed with Hepatitis C infection)</label>
+			<input id="element_81_2" name="element_81_2" class="element checkbox" type="checkbox" value="1" />
+			<label class="choice" for="element_81_2">Hepatitis B co-infection (if the client was initially diagnosed with Hepatitis C infection)</label>
+			<input id="element_81_3" name="element_81_3" class="element checkbox" type="checkbox" value="1" />
+			<label class="choice" for="element_81_3">HIV co-infection</label>
+			<input id="element_81_4" name="element_81_4" class="element checkbox" type="checkbox" value="1" />
+			<label class="choice" for="element_81_3">others, please specify:
+			<input id="element_81_5" name="element_81_5" class="element text" maxlength="255" size="14" value=""/></label>	
 
 		</span> 
 		</li>		<li class="section_break">
